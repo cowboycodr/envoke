@@ -7,14 +7,13 @@ class Envoke:
     A class to create and run keyboard macros with optional delays and randomness.
     """
     
-    def __init__(self, start_delay=0):
+    def __init__(self):
         """
         Initialize the Envoke macro creator.
         
         :param start_delay: Delay in seconds before the macro starts running.
         """
         self.sequence = []
-        self.start_delay = start_delay
 
     def __getattr__(self, key):
         """
@@ -58,28 +57,28 @@ class Envoke:
         self.sequence.append((key, actual_interval))
         return self
 
-    def run(self, repeat=1, continuous=False):
+    def run(self, repeat=1, continuous=False, start_delay=0):
         """
         Run the macro sequence.
 
         :param repeat: Number of times to repeat the sequence.
         :param continuous: If True, run the sequence continuously.
+        :param start_delay: Delay in seconds before the macro starts running.
         """
-        time.sleep(self.start_delay)
+
         while True:
             for key, interval in self.sequence:
-                pyautogui.press(key)
                 time.sleep(interval)
+                pyautogui.press(key)
             if not continuous:
                 repeat -= 1
                 if repeat <= 0:
                     break
 
-def envoke(start_delay=0):
+def envoke():
     """
     Factory function to create a Envoke instance.
 
-    :param start_delay: Delay in seconds before the macro starts running.
     :return: Instance of Envoke.
     """
-    return Envoke(start_delay)
+    return Envoke()
