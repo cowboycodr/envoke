@@ -1,5 +1,9 @@
 # Envoke
 
+<a href="https://pepy.tech/project/envoke"><img src="https://img.shields.io/pypi/dw/envoke"></a>
+<a href="https://pypi.org/project/envoke"><img src="https://img.shields.io/pypi/v/envoke"></a>
+<a href="https://github.com/cowboycodr/envoke"><img src="https://img.shields.io/github/repo-size/cowboycodr/envoke"></a>
+
 Envoke is a Python package that allows users to create and run keyboard macros with optional delays and randomness. It's designed to be simple yet flexible, providing a straightforward API for automating key presses.
 
 ## Installation
