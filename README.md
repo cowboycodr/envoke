@@ -22,11 +22,11 @@ Here's a simple example to get you started:
 from envoke import envoke
 
 # Create a macro sequence
-c = envoke(start_delay=2)
-c.enter(interval=0.5).key('a', interval=0.1)
+e = envoke()
+e.enter(interval=0.5).key('a', interval=0.1)
 
 # Run the macro
-c.run()
+e.run(start_delay=3)
 ```
 
 ## Advanced Usage
