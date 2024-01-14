@@ -2,14 +2,14 @@ import pyautogui
 import time
 import random
 
-class Conjure:
+class Envoke:
     """ 
     A class to create and run keyboard macros with optional delays and randomness.
     """
     
     def __init__(self, start_delay=0):
         """
-        Initialize the Conjure macro creator.
+        Initialize the Envoke macro creator.
         
         :param start_delay: Delay in seconds before the macro starts running.
         """
@@ -75,11 +75,11 @@ class Conjure:
                 if repeat <= 0:
                     break
 
-def conjure(start_delay=0):
+def envoke(start_delay=0):
     """
-    Factory function to create a Conjure instance.
+    Factory function to create a Envoke instance.
 
     :param start_delay: Delay in seconds before the macro starts running.
-    :return: Instance of Conjure.
+    :return: Instance of Envoke.
     """
-    return Conjure(start_delay)
+    return Envoke(start_delay)

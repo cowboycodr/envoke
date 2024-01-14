@@ -1,7 +1,7 @@
-from conjure import conjure
+from envoke import envoke
 
 # Create a macro sequence using number keys
-sequence = conjure(start_delay=1)
+sequence = envoke(start_delay=1)
 sequence.key('3').key('2', interval=0.3).key('1')
 
 # Add more number keys with optional random interval differences
