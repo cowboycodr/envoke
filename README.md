@@ -61,6 +61,8 @@ Will work on this eventually. For right now `/examples` should suffice.
 
 Contributions to Envoke are welcome! I don't currently have a `CONTRIBUTING.md` so just submit them freely.
 
+## Packaging
+
 ## License
 
 Envoke is released under the [MIT License](LICENSE).
