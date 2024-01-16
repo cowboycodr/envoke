@@ -1,8 +1,8 @@
 from envoke import envoke
 
 # Create a macro sequence
-sequence = envoke(start_delay=2)
-sequence.enter(interval=0.5).key('a', interval=0.1)
+sequence = envoke()
+sequence.a(interval=0.5).b(.25).c().key('1', interval=.5).key('2', .25).key('3')
 
 # Run the macro
-sequence.run()
+sequence.run(start_delay=2)
