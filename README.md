@@ -63,6 +63,19 @@ Contributions to Envoke are welcome! I don't currently have a `CONTRIBUTING.md` 
 
 ## Packaging
 
+To package Envoke for distribution, follow these steps:
+
+```bash
+# Ensure you are in the root directory of the project
+python -m build
+```
+
+After the build is successful, you can upload the package to PyPI using twine:
+
+```bash
+python -m twine upload dist/*
+```
+
 ## License
 
 Envoke is released under the [MIT License](LICENSE).
